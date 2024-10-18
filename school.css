@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: aqua;
+}
+
+header {
+    background: url(image/schoolpic.jpeg) no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+ header  nav.logo{
+    border-radius: 50%;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:black;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    animation: slideIn 2s ease-out;
+}
+
+.banner p {
+    margin: 20px 0;
+    color: brown;
+}
+
+.banner button {
+    background: #f8a73b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    animation: fadeIn 3s ease-in;
+}
+.card{
+    background: darkgray;
+    border-radius: 5px;
+    max-width: 300px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+.card h3{
+    margin-top: 0.5em;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about {
+    background: #f4f4f4;
+}
+
+#programs {
+    background: #fff;
+}
+
+.program {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+}
+
+.program img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
